@@ -7,7 +7,7 @@ import MainHeader from './components/MainHeader/MainHeader';
 function App() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // useEffect runs AFTER every component is render
+  // useEffect runs AFTER every component is rendered
   useEffect(() => {
     const storedUserLoggedInInformation = localStorage.getItem('isLoggedIn');
 
