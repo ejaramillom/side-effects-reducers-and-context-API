@@ -32,6 +32,8 @@ const Login = (props) => {
   }, [enteredEmail, enteredPassword]);
   // you put AS dependencies as the states you use in the function
   // the effect will run every time the dependency changes
+  // if we pass no dependency, not even empty array, it will run every time an event 
+  // takes place, a keystroke, a clikc or anything alike
 
   const emailChangeHandler = (event) => {
     setEnteredEmail(event.target.value);
